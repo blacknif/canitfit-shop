@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" role="img" aria-label="Atlas Work Desk">
+  <ellipse cx="320" cy="482" rx="252" ry="18" fill="#000" opacity="0.09"/>
+  <rect x="96" y="160" width="160" height="96" rx="8" fill="#26282c"/>
+  <rect x="104" y="168" width="144" height="80" rx="4" fill="#3d4f5c"/>
+  <rect x="168" y="256" width="16" height="22" fill="#26282c"/>
+  <rect x="140" y="276" width="72" height="8" rx="3" fill="#26282c"/>
+  <rect x="84" y="284" width="472" height="26" rx="6" fill="#7a5a3e"/>
+  <rect x="84" y="304" width="472" height="6" fill="#664a32"/>
+  <rect x="104" y="310" width="22" height="168" rx="4" fill="#4a3a2c"/>
+  <rect x="382" y="310" width="152" height="104" rx="6" fill="#8d6b4c"/>
+  <rect x="382" y="360" width="152" height="4" fill="#7a5a3e"/>
+  <rect x="440" y="332" width="36" height="6" rx="3" fill="#e9dfd2"/>
+  <rect x="440" y="384" width="36" height="6" rx="3" fill="#e9dfd2"/>
+  <rect x="512" y="414" width="22" height="64" rx="4" fill="#4a3a2c"/>
+</svg>
