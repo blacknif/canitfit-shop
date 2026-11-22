@@ -1,6 +1,6 @@
 {
   "shop": "Nook & Co.",
-  "note": "Demo store for the Can It Fit app (school project). Not a real shop; nothing is for sale.",
+  "note": "Demo store for the Can It Fit app. Nothing is for sale.",
   "products": [
     {
       "id": "chester-sofa",
@@ -14,7 +14,7 @@
       "image": "images/chester-sofa.png",
       "model": "models/sofa_02/sofa_02_1k.gltf",
       "modelYaw": 0,
-      "description": "Deep-buttoned three-seater in black leather on walnut legs."
+      "description": "Black leather, walnut legs."
     },
     {
       "id": "halden-lounge-chair",
@@ -28,7 +28,7 @@
       "image": "images/halden-lounge-chair.png",
       "model": "models/modern_arm_chair_01/modern_arm_chair_01_1k.gltf",
       "modelYaw": 0,
-      "description": "Solid oak frame with soft black leather cushions."
+      "description": "Oak frame, leather cushions."
     },
     {
       "id": "lumi-tv-console",
@@ -42,7 +42,7 @@
       "image": "images/lumi-tv-console.png",
       "model": "models/modern_wooden_cabinet/modern_wooden_cabinet_1k.gltf",
       "modelYaw": 0,
-      "description": "Low walnut console with slatted oak doors, for screens up to 85 inches."
+      "description": "Walnut, slatted oak doors."
     },
     {
       "id": "rest-queen-bed",
@@ -56,7 +56,7 @@
       "image": "images/rest-queen-bed.svg",
       "model": "",
       "modelYaw": 0,
-      "description": "Upholstered frame in stone grey with a padded headboard."
+      "description": "Grey fabric, padded headboard."
     },
     {
       "id": "atlas-work-desk",
@@ -70,7 +70,7 @@
       "image": "images/atlas-work-desk.svg",
       "model": "",
       "modelYaw": 0,
-      "description": "Oak-veneer desk with a drawer unit and room for two screens."
+      "description": "Oak veneer, two drawers."
     },
     {
       "id": "stack-bookshelf",
@@ -84,7 +84,7 @@
       "image": "images/stack-bookshelf.svg",
       "model": "",
       "modelYaw": 0,
-      "description": "Five shelves in warm white, slim enough for a hallway."
+      "description": "White, five shelves."
     }
   ]
 }
