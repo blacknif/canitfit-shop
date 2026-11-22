@@ -6,7 +6,8 @@ Can It Fit Android app with that product, at its real size.
 Live at https://blacknif.github.io/canitfit-shop/
 
 ## Files
-- `index.html` is the shop page. It builds the product list from `products.json`.
+- `index.html` is the page structure, `style.css` the look, `script.js` builds the product list
+  from `products.json`, and `icons.svg` holds the icons. Nothing is inline.
 - `products.json` holds the products. The app reads the same file, so one change updates both.
   Sizes are in cm (width, depth, height). `model` points to a glTF file in `models/`; leave it
   empty and the app builds the piece from its size.

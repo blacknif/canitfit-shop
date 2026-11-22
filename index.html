@@ -7,114 +7,12 @@
   <meta name="description" content="Demo furniture store for the Can It Fit app.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --paper: #f3f2ef;
-      --plate: #e6e4de;
-      --ink: #161616;
-      --muted: #5e5b55;
-      --rule: #cfccc5;
-      --accent: #f2c200;
-      --on-accent: #161616;
-
-      --t-small: 0.8125rem;
-      --t-body: 1rem;
-      --t-lead: 1.1875rem;
-      --t-name: 1.75rem;
-      --t-title: clamp(2.5rem, 8vw, 4rem);
-
-      --sans: Archivo, "Helvetica Neue", Arial, sans-serif;
-      --mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
-    }
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --paper: #121212;
-        --plate: #1e1e1d;
-        --ink: #ecebe8;
-        --muted: #a29f99;
-        --rule: #353431;
-      }
-    }
-
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--paper);
-      color: var(--ink);
-      font: 400 var(--t-body)/1.55 var(--sans);
-      -webkit-font-smoothing: antialiased;
-    }
-    a { color: inherit; }
-    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
-    @media (min-width: 720px) { .wrap { padding: 0 32px; } }
-
-    .label {
-      font: 500 var(--t-small)/1.4 var(--mono);
-      text-transform: uppercase;
-      letter-spacing: 0.06em;
-      color: var(--muted);
-    }
-
-    header .wrap { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; padding-top: 20px; padding-bottom: 20px; }
-    .wordmark { font: 800 1.375rem/1 var(--sans); font-stretch: 125%; letter-spacing: -0.01em; }
-
-    .title {
-      margin: 32px 0 24px;
-      font: 700 var(--t-title)/1 var(--sans);
-      font-stretch: 125%;
-      letter-spacing: -0.03em;
-    }
-
-    .list { list-style: none; margin: 0; padding: 0; border-bottom: 1px solid var(--rule); }
-    .item {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 16px;
-      padding: 28px 0 32px;
-      border-top: 1px solid var(--rule);
-      scroll-margin-top: 16px;
-    }
-    .item > * { min-width: 0; }
-    .plate { position: relative; margin: 0; background: var(--plate); aspect-ratio: 4 / 3; }
-    .plate img { position: absolute; inset: 0; margin: auto; width: 84%; height: 84%; object-fit: contain; }
-    .name { margin: 0 0 4px; font: 700 var(--t-name)/1.1 var(--sans); font-stretch: 112%; letter-spacing: -0.015em; }
-    .desc { margin: 0 0 20px; color: var(--muted); }
-
-    .spec { display: flex; flex-wrap: wrap; margin: 0 0 20px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule); }
-    .spec div { padding: 10px 20px 10px 0; margin-right: 20px; border-right: 1px solid var(--rule); }
-    .spec div:last-child { border-right: 0; }
-    .spec dt { font: 500 var(--t-small)/1.2 var(--mono); color: var(--muted); }
-    .spec dd { margin: 2px 0 0; font: 500 var(--t-lead)/1.2 var(--mono); }
-    .spec dd span { font-size: var(--t-small); color: var(--muted); }
-
-    .buy { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 24px; }
-    .price { font: 500 var(--t-lead)/1 var(--mono); }
-    .view {
-      display: inline-flex; align-items: center; gap: 10px;
-      background: var(--accent); color: var(--on-accent);
-      font: 600 var(--t-body)/1 var(--sans); font-stretch: 110%;
-      text-decoration: none; padding: 15px 20px; min-height: 48px; border-radius: 2px;
-    }
-    .view:hover { filter: brightness(0.95); }
-    .view:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
-    .icon { width: 20px; height: 20px; flex: none; fill: none; stroke: currentColor; stroke-width: 1.75; stroke-linecap: round; stroke-linejoin: round; }
-
-    @media (min-width: 720px) {
-      .item { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: 32px; padding: 40px 0; }
-    }
-
-    .note { margin: 20px 0 48px; }
-    footer { border-top: 1px solid var(--rule); padding: 20px 0 40px; }
-    footer p { margin: 0; }
-  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <symbol id="i-room" viewBox="0 0 24 24"><path d="M12 3 4 7.5v9L12 21l8-4.5v-9L12 3Z"/><path d="m4 7.5 8 4.5 8-4.5M12 12v9"/></symbol>
-  </svg>
-
-  <header>
+  <header class="site-header">
     <div class="wrap">
       <span class="wordmark">Nook &amp; Co.</span>
       <span class="label">Demo store</span>
@@ -129,78 +27,10 @@
     <p class="note label" id="get-app">View in your room needs the Can It Fit app on an Android phone.</p>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="wrap">
       <p class="label">School project. Nothing here is for sale. 3D models: <a href="https://polyhaven.com" rel="noopener">Poly Haven</a> (CC0).</p>
     </div>
   </footer>
-
-  <script>
-    const APP_PACKAGE = "com.jovanyeokaisheng.canitfit";
-    const isAndroid = /Android/i.test(navigator.userAgent);
-
-    // On Android an intent link opens the app, or jumps to the note above if the app isn't installed.
-    function appLink(id) {
-      const query = "id=" + encodeURIComponent(id);
-      if (!isAndroid) return "canitfit://product?" + query;
-      const fallback = location.href.split("#")[0] + "#get-app";
-      return "intent://product?" + query + "#Intent;scheme=canitfit;package=" + APP_PACKAGE +
-        ";S.browser_fallback_url=" + encodeURIComponent(fallback) + ";end";
-    }
-
-    function el(tag, className, text) {
-      const node = document.createElement(tag);
-      if (className) node.className = className;
-      if (text !== undefined) node.textContent = text;
-      return node;
-    }
-
-    function dimension(label, value) {
-      const cell = el("div");
-      const dd = el("dd", null, String(value));
-      dd.append(el("span", null, " cm"));
-      cell.append(el("dt", null, label), dd);
-      return cell;
-    }
-
-    function row(product) {
-      const item = el("li", "item");
-      item.id = product.id;
-
-      const plate = el("figure", "plate");
-      const img = el("img");
-      img.src = product.image;
-      img.alt = product.name;
-      img.loading = "lazy";
-      plate.append(img);
-
-      const spec = el("dl", "spec");
-      spec.append(dimension("Width", product.widthCm), dimension("Depth", product.depthCm), dimension("Height", product.heightCm));
-
-      const view = el("a", "view");
-      view.href = appLink(product.id);
-      view.innerHTML = '<svg class="icon" aria-hidden="true"><use href="#i-room"/></svg><span>View in your room</span>';
-      const buy = el("div", "buy");
-      buy.append(el("span", "price", "S$" + product.priceSgd.toLocaleString("en-SG")), view);
-
-      const detail = el("div");
-      detail.append(el("h2", "name", product.name), el("p", "desc", product.description), spec, buy);
-      item.append(plate, detail);
-      return item;
-    }
-
-    fetch("products.json", { cache: "no-cache" })
-      .then(response => {
-        if (!response.ok) throw new Error(response.status);
-        return response.json();
-      })
-      .then(data => {
-        document.getElementById("products").replaceChildren(...data.products.map(row));
-        if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
-      })
-      .catch(() => {
-        document.getElementById("status").textContent = "Couldn't load the products. Refresh to try again.";
-      });
-  </script>
 </body>
 </html>
